@@ -1,0 +1,23 @@
+{
+  "name": "TukangTest",
+  "description": "TukangTest TestCase Generatpr",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [ {
+    "js": [ "jquery.min.js"],
+     "css": ["panel.css"],
+    "matches": [ "http://*/*", "https://*/*"]
+  }],
+  "browser_action": {
+    "default_title": "Start Create TestCase",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "manifest_version": 2
+}
